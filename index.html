@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Monitor</h1>
+        <div class="data_container">
+            <div class="box temperature" id="temperatureBox">
+                <div class="label">Temperature</div>
+                <div class="value">
+                    <div id="Temperature">--</div>
+                    <div>&nbsp; °C</div>
+                </div>
+            </div>
+            <div class="box humidity" id="humidityBox">
+                <div class="label">Humidity</div>
+                <div class="value">
+                    <div id="Humidity">--</div>
+                    <div>&nbsp; %</div>
+                </div>
+            </div>
+            <div class="box pm25" id="pm25Box">
+                <div class="label">PM2.5</div>
+                <div class="value">
+                    <div id="PM2.5_DUST_LEVEL">--</div>
+                    <div>&nbsp; µg/m³</div>
+                </div>
+            </div>
+            <div class="box aqi" id="aqiBox">
+                <div class="label">AQI</div>
+                <div class="value">
+                    <div id="AQI_LEVEL">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
