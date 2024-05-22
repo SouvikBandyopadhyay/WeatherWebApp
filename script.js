@@ -10,7 +10,7 @@ async function fetchData() {
         const feedsData0 = data.feeds[0];
         for (let index = 1; index <= 4; index++) {
             if (feedsData0[`field${index}`] !== null) {
-                document.getElementById(channelData[`field${index}`].replace(" ","_")).innerText = feedsData0[`field${index}`];
+                document.getElementById(channelData[`field${index}`].replaceAll(" ","_")).innerText = feedsData0[`field${index}`];
             }
             
         }
